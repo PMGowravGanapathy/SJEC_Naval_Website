@@ -1,0 +1,235 @@
+.header {
+  background-color: #02173b; /* Dark blue color */
+}
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.n {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  background-color: transparent; /* Transparent so it matches the header background */
+}
+
+.navbar-toggler {
+  border: none; /* Remove button border */
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Adds a gold hover effect */
+}
+
+/* Responsive Spacing */
+@media (max-width: 992px) {
+  .navbar-nav {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .navbar-nav .nav-link {
+      margin-bottom: 10px;
+  }
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Styling */
+.header {
+  background-color: #02173b;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+/* Camps Section */
+.camps-section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #02173b;
+}
+
+/* Camp Card Styling */
+.camp-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.camp-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.camp-img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.camp-content {
+  padding: 2rem;
+  width: 50%;
+}
+
+.camp-content h3 {
+  font-size: 1.8rem;
+  color: #02173b;
+  margin-bottom: 1rem;
+}
+
+.camp-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgb(3, 3, 80); /* Dark blue background */
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: rgb(240, 222, 222); /* Light text color */
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: white; /* Set initial icon color to white for visibility */
+  border: 2px solid orangered;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: rgb(3, 3, 80); /* Match the footer background */
+  
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px);
+  color: orangered; /* Icon color changes on hover */
+  border: 2px solid orangered;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+  color: rgb(240, 222, 222); /* Light color for the text */
+}
+
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* Additional icon styles for clarity */
+.footer .social i {
+  vertical-align: middle;
+  font-size: 20px;
+  color: white; /* Ensure icons are white to contrast with dark background */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .footer .social a {
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    font-size: 20px;
+  }
+  
+  .footer ul {
+    font-size: 16px;
+  }
+}
+
+.footer ul li a{
+  color: white;
+  border-bottom: 3px solid orangered;
+  transition: 0.3s ease;
+}
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+
+}
+.footer .copyright{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .camp-card, .camp-card.reverse {
+    flex-direction: column;
+  }
+
+  .camp-img, .camp-content {
+    width: 100%;
+  }
+
+  .camp-content {
+    padding: 1.5rem;
+  }
+}

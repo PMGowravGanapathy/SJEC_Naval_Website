@@ -1,0 +1,250 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #02173b; /* Dark blue color */
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.n {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  background-color: transparent; /* Transparent so it matches the header background */
+}
+
+.navbar-toggler {
+  border: none; /* Remove button border */
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Adds a gold hover effect */
+}
+
+/* Responsive Spacing */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    margin-bottom: 10px;
+  }
+}
+
+/* NCC Gallery */
+.ncc-gallery {
+  padding: 40px;
+  text-align: center;
+}
+
+.ncc-gallery h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 250px;
+  height: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Batches Section */
+.batches {
+  background-color: #eaeef3;
+  padding: 40px 20px;
+}
+
+.batches h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+.batch-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cadet {
+  margin: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cadet img {
+  width: 620px;
+  height: 400px;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cadet:hover img {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgb(3, 3, 80); /* Dark blue background */
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: rgb(240, 222, 222); /* Light text color */
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: white; /* Set initial icon color to white for visibility */
+  border: 2px solid orangered;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: rgb(3, 3, 80); /* Match the footer background */
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px);
+  color: orangered; /* Icon color changes on hover */
+  border: 2px solid orangered;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery-grid, .batch-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .social a {
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    font-size: 20px;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cadet img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cadet {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .ncc-gallery h2,
+  .batches h2 {
+    font-size: 1.5em;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cadet img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cadet {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer .social a {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,186 @@
+.header {
+  background-color: #02173b; /* Dark blue color */
+}
+.card {
+  margin: 20px; /* Adds some space around the card */
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #001f3f;
+  font-weight: bold;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; /* Ensures the image is responsive */
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Make card take full width on smaller screens */
+  }
+}
+.cadet-section {
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for better appearance */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.p {
+  max-width: 600px;
+  font-size: 18px; /* Improve readability */
+  line-height: 1.6;
+}
+
+.p span.highlight {
+  color: darkblue; /* Highlight span */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .p {
+    font-size: 16px; /* Smaller font size for smaller screens */
+    padding: 10px;
+  }
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgb(3, 3, 80); /* Dark blue background */
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: rgb(240, 222, 222); /* Light text color */
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: white; /* Set initial icon color to white for visibility */
+  border: 2px solid orangered;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: rgb(3, 3, 80); /* Match the footer background */
+  
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px);
+  color: orangered; /* Icon color changes on hover */
+  border: 2px solid orangered;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+  color: rgb(240, 222, 222); /* Light color for the text */
+}
+
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* Additional icon styles for clarity */
+.footer .social i {
+  vertical-align: middle;
+  font-size: 20px;
+  color: white; /* Ensure icons are white to contrast with dark background */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .footer .social a {
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    font-size: 20px;
+  }
+  
+  .footer ul {
+    font-size: 16px;
+  }
+}
+
+.footer ul li a{
+  color: white;
+  border-bottom: 3px solid orangered;
+  transition: 0.3s ease;
+}
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+
+}
+.footer .copyright{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+
+}
+
+.n {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  background-color: transparent; /* Transparent so it matches the header background */
+}
+
+.navbar-toggler {
+  border: none; /* Remove button border */
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Adds a gold hover effect */
+}
+
+/* Responsive Spacing */
+@media (max-width: 992px) {
+  .navbar-nav {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .navbar-nav .nav-link {
+      margin-bottom: 10px;
+  }
+}
